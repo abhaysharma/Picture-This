@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,9 +14,35 @@
     <div class="title">
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
-    </div><img srcset="images/landscape-320px.jpg 320w, images/landscape-640px.jpg 640w, images/landscape-960px.jpg 960w"
-     src="images/landscape-960px.jpg" alt="Landscape Image">
+    </div>
+    <picture>
+      <!-- square in 800, 1600 and 2400 -->
 
+      <source srcset="images/squares/museum-800_x_800.jpg, images/squares/museum-1600_x_1600.jpg 2x, 
+                      images/squares/museum-2400_x_2400.jpg 3x" media="(min-width: 1600px)">
+      <!-- square in 640, 1280, and 1440 -->
+
+      <source srcset="images/squares/museum-640_x_640.jpg, images/squares/museum-1280_x_1280.jpg 2x, 
+                      images/squares/museum-1440_x_1440.jpg 3x" media="(min-width: 1280px)">
+      <!-- square in 480, 960, and 1440 -->
+
+      <source srcset="images/squares/museum-480_x_480.jpg, images/squares/museum-960_x_960.jpg 2x, 
+                      images/squares/museum-1440_x_1440.jpg 3x" media="(min-width: 960px)">
+      <!--landscape in 320x180, 640x360, and 960x540 -->
+
+      <source srcset="images/landscape/museum-320_x_180.jpg, images/landscape/museum-640_x_360.jpg 2x, images/landscape/museum-960_x_540.jpg 3x" media="(min-width: 320px)">
+      <!--landscape in 480x270, 960x540, and 1440x810 -->
+
+      <source srcset="images/landscape/museum-480_x_270.jpg, images/landscape/museum-960_x_540.jpg 2x, images/landscape/museum-1440_x_810.jpg 3x" media="(min-width: 480px)">
+      <!-- Photos in landscape  -->
+
+      <source srcset="images/landscape/museum-720_x_405.jpg, images/landscape/museum-1440_x_810.jpg2x, images/landscape/museum-2160_x_1215.jpg 3x" media="(min-width: 720px)">
+      <!-- Photos in landscape  -->
+
+      <source srcset="images/landscape/museum-960_x_540.jpg, images/landscape/museum-1920_x_1080.jpg 2x, images/landscape/museum-2880_x_1621.jpg 3x" media="(min-width: 960px)">
+      
+      <img src="images/museum.jpg">
+    </picture> 
   </header>
 </body>
 
