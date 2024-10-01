@@ -12,6 +12,7 @@ body {
   grid-template-columns: 1fr;
   align-items: center;
   background-color: cadetblue;
+  
 }
 
 .title {
@@ -37,4 +38,18 @@ img {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+@media (min-width: 0px) {
+.header {
+  justify-content: center;
+}
+.image-container{
+  text-align: center;
+}
+.image-container img{
+  width: 100%;
+  max-width: 959px;
+  height:auto;
+  
+}
 }
