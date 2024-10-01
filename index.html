@@ -9,13 +9,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="container">
   <header class="header">
     <div class="title">
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <picture class="image-container">
+      <source class="img"
+          srcset ="images/museum.jpg"
+          type="image/jpg"
+          media="all and (min-width:0px)"/>
+      <source
+          srcset="images/muuseum.png"
+          type="image/jpg"
+          media="all and (min-width:960px)"/>
+          <img src="images/museum.jpg" alt="museum image">
+    </picture>
+  
 
   </header>
 </body>
